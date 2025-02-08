@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movies History</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #9f7aea, #f687b3);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .history-section {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 3rem;
+    }
+
+    .subtitle {
+      font-size: 2rem;
+      color: #2d3748;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #4a5568;
+    }
+
+    .movies-title {
+      font-size: 2.5rem;
+      color: white;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .movies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .movie-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-title {
+      font-size: 1.5rem;
+      color: #2d3748;
+      margin-bottom: 0.5rem;
+    }
+
+    .movie-year {
+      font-size: 0.9rem;
+      color: #718096;
+      margin-bottom: 1rem;
+    }
+
+    .movie-description {
+      font-size: 1rem;
+      color: #4a5568;
+      margin-bottom: 1rem;
+    }
+
+    .movie-button {
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid #9f7aea;
+      background-color: transparent;
+      border-radius: 0.5rem;
+      color: #9f7aea;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .movie-button:hover {
+      background-color: #9f7aea;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">The History of Cinema & World Famous Movies</h1>
+    <section class="history-section">
+      <h2 class="subtitle">A Brief History of Cinema</h2>
+      <p class="description">
+        The history of cinema dates back to the late 19th century when motion pictures were first invented. From silent films to the era of talkies, and the transition from black-and-white to color, cinema has evolved into one of the most influential art forms globally. Key milestones include the Golden Age of Hollywood, the rise of international cinema, and the advent of digital filmmaking.
+      </p>
+    </section>
+    <h2 class="movies-title">World Famous Movies</h2>
+    <div class="movies-grid">
+      <div class="movie-card">
+        <h3 class="movie-title">Inception</h3>
+        <p class="movie-year">2010</p>
+        <p class="movie-description">A thief who steals corporate secrets through dream-sharing technology is tasked with planting an idea into a CEO's mind.</p>
+        <button class="movie-button">More Info</button>
+      </div>
+      <div class="movie-card">
+        <h3 class="movie-title">The Matrix</h3>
+        <p class="movie-year">1999</p>
+        <p class="movie-description">A hacker learns the truth about his reality and his role in a war against its controllers.</p>
+        <button class="movie-button">More Info</button>
+      </div>
+      <div class="movie-card">
+        <h3 class="movie-title">Interstellar</h3>
+        <p class="movie-year">2014</p>
+        <p class="movie-description">Explorers travel through a wormhole to ensure humanity’s survival.</p>
+        <button class="movie-button">More Info</button>
+      </div>
+      <div class="movie-card">
+        <h3 class="movie-title">Casablanca</h3>
+        <p class="movie-year">1942</p>
+        <p class="movie-description">In World War II-era Morocco, a man must choose between love and his duty.</p>
+        <button class="movie-button">More Info</button>
+      </div>
+      <div class="movie-card">
+        <h3 class="movie-title">The Godfather</h3>
+        <p class="movie-year">1972</p>
+        <p class="movie-description">The aging patriarch of an organized crime dynasty transfers control of his empire to his reluctant son.</p>
+        <button class="movie-button">More Info</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
